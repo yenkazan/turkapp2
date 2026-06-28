@@ -1,0 +1,24 @@
+{
+  "project": "turkapp2",
+  "mode": "self-healing",
+
+  "rules": {
+    "expo_sdk": 56,
+    "must_have_app_entry": true,
+    "no_native_unverified_modules": true,
+    "block_if_syntax_error": true
+  },
+
+  "pipeline": {
+    "precheck": true,
+    "auto_commit": true,
+    "auto_push": true,
+    "auto_build": true,
+    "auto_fix_on_fail": true
+  },
+
+  "fix_strategy": {
+    "max_retry": 3,
+    "prefer_minimal_fix": true
+  }
+}
